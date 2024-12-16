@@ -1,0 +1,14 @@
+server:
+  ha:
+    enabled: true
+    replicas: 2
+    storage:
+      pvc:
+        enabled: true
+        existingClaim: vault-pvc
+  dataStorage:
+    enabled: false
+  standalone:
+    enabled: false
+ui:
+  enabled: true
